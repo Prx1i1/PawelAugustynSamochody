@@ -1,0 +1,6 @@
+/node_modules
+/static
+/views
+/package-lock.json
+/kolekcja.db
+/backup.db
