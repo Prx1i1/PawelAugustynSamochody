@@ -1,0 +1,86 @@
+<div>
+<form method="get" action="/add">
+    <table>
+            <tr>
+            <th>
+                <label for="ubezpieczenie">ubezpieczenie</label>
+            </th>
+            <th>
+                <input type="checkbox" name="ubezpieczenie" id="ubezpieczenie">
+            </th>
+            </tr>
+            <tr>
+            <th>
+                <label for="benzyna">benzyna</label>
+            </th>
+            <th>
+                <input type="checkbox" name="benzyna" id="benzyna">
+            </th>
+            </tr>
+            <tr>
+            <th>
+                <label for="uszkodzenie">uszkodzenie</label>
+            </th>
+            <th>
+                <input type="checkbox" name="uszkodzenie" id="uszkodzenie">
+            </th>
+            </tr>
+            <tr>
+            <th>
+                <label for="naped4x4">naped4x4</label>
+            </th>
+            <th>
+                <input type="checkbox" name="naped4x4" id="naped4x4">
+            </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <button class="submit" type="submit">Dodaj do bazy</button>
+                </th>
+            </tr>
+
+    </table>
+</form>
+
+</div>
+<div id="second">
+    <table>
+        <tr>
+            <th>
+
+            </th>
+            <th>
+                ubezpieczenie
+            </th>
+            <th>
+                benzyna
+            </th>
+            <th>
+                uszkodzenie
+            </th>
+            <th>
+                napęd4x4
+            </th>
+            <th>
+
+            </th>
+            <th>
+
+            </th>
+        </tr>
+        {{#each docsy}}
+        <form>
+            <tr>
+                <th>{{@index}}</th>
+                <th>{{{noData ubezpieczenie}}}</th>
+                <th>{{{noData benzyna}}}</th>
+                <th>{{{noData uszkodzony}}}</th>
+                <th>{{{noData naped4x4}}}</th>
+                <th><button formaction="/{{action1}}" class="{{action1}}" value="{{_id}}" name="data">{{action1}}</button></th>
+                <th><button formaction="/{{action2}}" class="{{action2}}" value="{{_id}}" name="data">{{action2}}</button></th>
+            </tr>
+        </form>
+        {{/each}}
+    </table>
+
+</div>

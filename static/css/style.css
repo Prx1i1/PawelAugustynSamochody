@@ -1,0 +1,39 @@
+th, td {
+    border: 1px solid gray;
+}
+.delete, .cancel{
+    color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+.edit{
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+.update{
+    color: green;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+.submit{
+    color:grey;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.submit:hover{
+    color:black;
+    border: 1px solid black;
+    background-color: blanchedalmond;
+}
+button:hover{
+    background-color: blanchedalmond;
+}
+div{
+    position: absolute;
+    top: 0px;
+
+}
+#second{
+    left:150px;
+}
